@@ -1,0 +1,69 @@
+<template>
+    <transition name="notiftrans">
+        <div class="showmes">
+            <div class="contentmes">{{ message }}</div>
+        </div>
+    </transition>
+</template>
+
+<script>
+export default {
+  name: 'notification',
+  props: ['message'],
+  mounted(){
+      var vue_ = this;
+        setTimeout( function (){ 
+            vue_.$emit('close');
+         }, 1500);
+  }
+}
+</script>
+
+<style>
+
+.notiftrans-enter-active  {
+    transition: opacity 0.8s ease-in;
+    opacity: 1;
+}
+
+.notiftrans-leave-active
+{
+    opacity: 0;
+    transition: opacity .5s linear;
+}
+
+.notiftrans-enter  {
+    opacity: 0;
+}
+
+.notiftrans-leave  {
+    opacity: 1;
+}
+
+
+/*短提示*/
+.showmes {   
+    position: fixed;
+    bottom: 0px;
+    left: 10px;
+    right: 10px;
+    z-index: 99999;
+    bottom:40%;
+}
+
+.showmes .contentmes {
+    text-align: center;
+    background-color: rgba(102, 102, 102,0.9);
+    border-radius: 5px;
+    min-height: .3rem;
+    font-size: .25rem;
+    color: #FFFFFF;
+    line-height: .4rem;
+    width: 4rem;
+    margin: 0px auto;
+    padding: 5px;
+    z-index: 99999;
+}
+
+</style>
+
