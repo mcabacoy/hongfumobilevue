@@ -13,7 +13,7 @@
 import { mapState } from 'vuex'
 
 export default {
-  name: 'platform-list',
+  name: 'platformList',
   computed: {
       ...mapState ({
           platforms: state => state.platform.platforms

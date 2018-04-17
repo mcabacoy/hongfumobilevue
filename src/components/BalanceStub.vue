@@ -18,7 +18,7 @@
 <script>
 export default {
 
-  name: 'balance-stub',
+  name: 'balanceStub',
   props: ['item'],
   methods: {
     showModal: function (payload){

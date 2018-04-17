@@ -39,8 +39,6 @@ export default {
      ])
     },
     created(){
-      
-
         this.setCurrentPage('Homepage');
     }
 }

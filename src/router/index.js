@@ -12,6 +12,7 @@ import SignInView from '../views/SignInView'
 
 import LogInView from '../views/LogInView'
 import RetrievePasswordView from '../views/RetrievePasswordView'
+import GameListView from '../views/GameListView'
 
 Vue.use(Router)
 
@@ -52,6 +53,10 @@ routes: [
     {
         path: '/RetrievePassword',
         component: RetrievePasswordView,
+    },
+    {
+        path: '/GameList',
+        component: GameListView,
     }
 ]
 })

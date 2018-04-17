@@ -58,6 +58,13 @@ const state ={
             class: '',
             type: 'back'
         },
+        {
+            link: 'GameList',
+            linktype: 'internal',
+            name: 'GameList',
+            class: '',
+            type: 'back'
+        }
         
     ]
 }
@@ -66,7 +73,7 @@ const getters = {
     getMenuByLink (state) {
         var item = state.pages.find( item => item.link == state.currentpage );
         if (item == null || typeof item == 'undefined')
-            return '';
+            return '';x
         return item.name;
     },
     getMenuTypeLink (state) {

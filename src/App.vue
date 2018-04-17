@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    
     <navigation-bar @openSideBar="open"
          v-bind:currentPage="currentPage"
          v-if="currentPage!='LogIn'">

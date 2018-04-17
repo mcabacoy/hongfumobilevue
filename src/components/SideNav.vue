@@ -7,7 +7,7 @@
                 <img class="grade" :src="getUserProfileSource(grade)" />
                 <p id="AccountName">{{ "用户 " + accountName }}</p>
             </div>
-            <div class="secondtabb">{{currentPage}}
+            <div class="secondtabb">
                 <ul>
                     <li v-for="menu in menus"
                         v-bind:key="menu.name" 

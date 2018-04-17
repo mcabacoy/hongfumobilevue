@@ -16,7 +16,7 @@
 
 import Swiper from 'swiper'
 export default {
-  name: 'banner-swiper',
+  name: 'bannerSwiper',
   data(){
      return {
          bannerPath: '/src/assets/banner/',
